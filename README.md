@@ -71,4 +71,11 @@ Before analyzing the experiment results, the dataset (`campaign_experiment_data.
 * **Invalid Binaries:** Validated that all boolean funnel stages (landing page visits, trial starts, conversions) contained only strictly valid 0/1 integers.
 * **Revenue Outliers:** Identified 4 extreme upper-bound outliers in `revenue_30d` (exceeding \$2,340, with a max of \$8,610). While retained for total revenue calculations, these were noted as potential skews for ARPU (Average Revenue Per User) interpretation.
 
-* 
+## 6. Hypothesis Test Summary
+
+To rigorously evaluate the experiment, a one-tailed Two-Proportion Z-Test was framed around the North Star metric (Paid Conversion Rate). 
+* **Null Hypothesis (H0):** The Treatment group's conversion rate is less than or equal to the Control group.
+* **Alternate Hypothesis (HA):** The Treatment group's conversion rate is strictly greater than the Control group.
+* **Significance Level:** Alpha = 0.05.
+
+The interpretation logic dictates that a p-value below 0.05 is required to reject the null hypothesis. A successful rejection, combined with stable guardrail metrics, forms the required evidence to recommend a global launch.
