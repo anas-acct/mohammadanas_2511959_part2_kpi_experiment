@@ -40,3 +40,22 @@ In a subscription-based business, top-of-funnel user acquisition is expensive. I
 
 **Risks of Blind Optimization:**
 If the Paid Conversion Rate is optimized blindly without monitoring guardrails, the business is exposed to severe risks. For example, the campaign could use aggressive "dark patterns" (e.g., hiding the cancel button, forcing immediate billing) or offer unsustainable, massive discounts to spike the conversion rate. This would artificially inflate conversions in the short term but lead to a massive surge in **Refund Rates**, immediate first-month churn, overwhelmed customer support, and permanent damage to brand trust.
+
+## Guardrail Metric Evaluation & Risk Analysis
+
+While the primary conversion metric showed a statistically significant lift, aggressive optimization can often break downstream systems. We evaluated four key guardrail metrics to assess operational and financial risks:
+
+**1. Support Ticket Rate (Critical Risk Identified)**
+* **Control:** 14.78% | **Treatment:** 24.79%
+* **Risk Assessment:** High. The new onboarding campaign caused a massive 10% absolute increase in the proportion of users submitting support tickets. This indicates severe user friction, confusion in the UI, or unclear billing expectations. Scaling this campaign globally as-is will require a massive increase in customer support headcount and capacity.
+
+**2. Average Days to Convert (Positive)**
+* **Control:** 8.86 days | **Treatment:** 6.40 days
+* **Risk Assessment:** None. The new campaign successfully accelerated the conversion cycle by over 2 days, decreasing the time-to-revenue.
+
+**3. Refund Rate (Neutral)**
+* **Control:** 0.00% | **Treatment:** 0.42%
+* **Risk Assessment:** Low. While slightly higher in the treatment group, a sub-1% refund rate is well within acceptable industry margins and proves we are not driving "accidental" or highly-regretted conversions.
+
+**4. Segment-Level Performance (Positive)**
+* **Risk Assessment:** None. A breakdown of conversion rates by region (North, South, East, West) revealed that no single segment was alienated. Every region experienced a positive conversion lift under the Treatment campaign, with the North region seeing the highest jump (3.4% to 8.8%).
