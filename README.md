@@ -79,3 +79,11 @@ To rigorously evaluate the experiment, a one-tailed Two-Proportion Z-Test was fr
 * **Significance Level:** Alpha = 0.05.
 
 The interpretation logic dictates that a p-value below 0.05 is required to reject the null hypothesis. A successful rejection, combined with stable guardrail metrics, forms the required evidence to recommend a global launch.
+
+## 7. Guardrail Metrics Considered
+
+To ensure a holistic business evaluation, the following guardrails were analyzed:
+* **Support Ticket Rate:** Acted as a proxy for user friction. Identified a major operational risk (rate spiked from 14.7% to 24.7% in the treatment group).
+* **Average Days to Convert:** Monitored pipeline velocity. Showed a positive reduction of 2.4 days.
+* **Refund Rate:** Monitored revenue quality and buyer's remorse. Remained stable and negligible (<0.5%).
+* **Segment Decline (Region):** Ensured demographic stability. Confirmed all regions experienced a conversion lift.
