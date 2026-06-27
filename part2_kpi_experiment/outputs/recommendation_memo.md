@@ -1,4 +1,4 @@
-## Executive Summary: Business Problem Framing
+## 1. Executive Summary: Business Problem Framing
 
 **1. The Strategic Decision**
 The core decision before the leadership team is whether to fully deploy a newly designed user onboarding and activation campaign (the "Treatment" experience) across our entire global user base, or to retain the legacy onboarding workflow (the "Control" experience). This decision will dictate our product's first-impression strategy and our approach to early-stage user retention.
@@ -23,7 +23,7 @@ To recommend a full global launch, the experiment must yield the following empir
 * A statistically significant lift (e.g., p-value < 0.05) in the Paid Conversion Rate for the Treatment group compared to the Control group.
 * Neutral or positive performance across all key guardrail metrics (Refund Rate, Support Tickets, etc.), proving that the conversion lift is sustainable and not artificially inflated by aggressive, high-churn tactics.
 
-* ## 2. North Star Metric Definition
+## 2. North Star Metric Definition
 
 **Selected North Star Metric:** Paid Conversion Rate (Total Users Converted to Paid / Total Users)
 
