@@ -23,3 +23,17 @@ One-tailed test (specifically, a Two-Proportion Z-Test). We are using a one-tail
 **7. Interpretation Logic & Business Decision Mapping**
 * **If P-value < 0.05:** We reject the Null Hypothesis. This provides statistical evidence that the Treatment campaign drives a meaningful lift in conversions. Assuming guardrail metrics (refunds, support tickets) remain healthy, the recommendation will be to **Launch**.
 * **If P-value >= 0.05:** We fail to reject the Null Hypothesis. We lack sufficient evidence that the new campaign is an improvement. Because rolling out new code carries engineering and operational costs, the recommendation will be **Do not launch** or **Continue testing**.
+
+
+**8. Test Execution & Results Summary**
+A Two-Proportion Z-Test was conducted to compare the Paid Conversion Rates of the Control and Treatment groups.
+* **Control Group Inputs:** 22 conversions out of 690 total users (3.19% conversion rate).
+* **Treatment Group Inputs:** 50 conversions out of 710 total users (7.04% conversion rate).
+
+**Statistical Output:**
+* **Z-Statistic:** 3.2640
+* **P-Value:** 0.0005
+
+**9. Decision Rule & Business Interpretation**
+* **Decision Rule Applied:** Because the p-value (0.0005) is significantly less than the Alpha threshold of 0.05, we successfully reject the Null Hypothesis.
+* **Business Interpretation:** There is overwhelming statistical evidence that the new onboarding campaign (Treatment) drives a meaningful and substantial increase in Paid Conversion Rates. The new campaign more than doubled the conversion rate (from 3.19% to 7.04%). From a top-of-funnel perspective, this test is a definitive success. Pending a final review of the operational guardrail metrics, the quantitative evidence strongly supports a "Launch" recommendation.
