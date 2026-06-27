@@ -1,4 +1,4 @@
-## 1. Executive Summary: Business Problem Framing
+# Executive Summary: Business Problem Framing
 
 **1. The Strategic Decision**
 The core decision before the leadership team is whether to fully deploy a newly designed user onboarding and activation campaign (the "Treatment" experience) across our entire global user base, or to retain the legacy onboarding workflow (the "Control" experience). This decision will dictate our product's first-impression strategy and our approach to early-stage user retention.
@@ -23,7 +23,7 @@ To recommend a full global launch, the experiment must yield the following empir
 * A statistically significant lift (e.g., p-value < 0.05) in the Paid Conversion Rate for the Treatment group compared to the Control group.
 * Neutral or positive performance across all key guardrail metrics (Refund Rate, Support Tickets, etc.), proving that the conversion lift is sustainable and not artificially inflated by aggressive, high-churn tactics.
 
-## 2. North Star Metric Definition
+# North Star Metric Definition
 
 **Selected North Star Metric:** Paid Conversion Rate (Total Users Converted to Paid / Total Users)
 
@@ -41,7 +41,7 @@ In a subscription-based business, top-of-funnel user acquisition is expensive. I
 **Risks of Blind Optimization:**
 If the Paid Conversion Rate is optimized blindly without monitoring guardrails, the business is exposed to severe risks. For example, the campaign could use aggressive "dark patterns" (e.g., hiding the cancel button, forcing immediate billing) or offer unsustainable, massive discounts to spike the conversion rate. This would artificially inflate conversions in the short term but lead to a massive surge in **Refund Rates**, immediate first-month churn, overwhelmed customer support, and permanent damage to brand trust.
 
-## Task8: Guardrail Metric Evaluation & Risk Analysis
+# Task8: Guardrail Metric Evaluation & Risk Analysis
 
 While the primary conversion metric showed a statistically significant lift, aggressive optimization can often break downstream systems. We evaluated four key guardrail metrics to assess operational and financial risks:
 
