@@ -41,7 +41,7 @@ In a subscription-based business, top-of-funnel user acquisition is expensive. I
 **Risks of Blind Optimization:**
 If the Paid Conversion Rate is optimized blindly without monitoring guardrails, the business is exposed to severe risks. For example, the campaign could use aggressive "dark patterns" (e.g., hiding the cancel button, forcing immediate billing) or offer unsustainable, massive discounts to spike the conversion rate. This would artificially inflate conversions in the short term but lead to a massive surge in **Refund Rates**, immediate first-month churn, overwhelmed customer support, and permanent damage to brand trust.
 
-## Guardrail Metric Evaluation & Risk Analysis
+## Task8: Guardrail Metric Evaluation & Risk Analysis
 
 While the primary conversion metric showed a statistically significant lift, aggressive optimization can often break downstream systems. We evaluated four key guardrail metrics to assess operational and financial risks:
 
