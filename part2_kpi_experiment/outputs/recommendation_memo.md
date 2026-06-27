@@ -22,3 +22,21 @@ While aggressive optimization for conversion is the goal, it cannot come at the 
 To recommend a full global launch, the experiment must yield the following empirical evidence:
 * A statistically significant lift (e.g., p-value < 0.05) in the Paid Conversion Rate for the Treatment group compared to the Control group.
 * Neutral or positive performance across all key guardrail metrics (Refund Rate, Support Tickets, etc.), proving that the conversion lift is sustainable and not artificially inflated by aggressive, high-churn tactics.
+
+* ## 2. North Star Metric Definition
+
+**Selected North Star Metric:** Paid Conversion Rate (Total Users Converted to Paid / Total Users)
+
+**Why this is the primary success metric:**
+The core objective of the new onboarding campaign is to improve early user activation. While getting users to start a trial or complete a profile is important, the ultimate proof of a successful onboarding experience in a subscription model is the user's willingness to pay. The Paid Conversion Rate directly measures the campaign's effectiveness at bridging the gap between initial curiosity (sign-up) and realized product value (payment). 
+
+**Why other metrics are supporting/guardrails instead of the North Star:**
+* **Leading Indicators (Drivers):** Metrics like *Trial Start Rate* or *Onboarding Completion Rate* are leading indicators. A user might complete onboarding but still churn before paying. They drive the North Star but do not guarantee business value on their own.
+* **Lagging Indicators (Value):** *Average Revenue Per User (ARPU)* is heavily influenced by plan pricing, cross-sells, or external marketing factors, making it too broad to isolate the specific impact of the onboarding campaign.
+* **Guardrail Metrics:** Metrics like *Refund Rate* or *Support Ticket Rate* measure friction and operational cost. They are necessary to ensure we aren't breaking the product, but they do not measure top-line growth.
+
+**Connection to Business Growth:**
+In a subscription-based business, top-of-funnel user acquisition is expensive. Increasing the Paid Conversion Rate directly increases Monthly Recurring Revenue (MRR) and decreases the Customer Acquisition Cost (CAC) payback period. A higher conversion rate means the business can scale faster and invest more heavily in product development and marketing.
+
+**Risks of Blind Optimization:**
+If the Paid Conversion Rate is optimized blindly without monitoring guardrails, the business is exposed to severe risks. For example, the campaign could use aggressive "dark patterns" (e.g., hiding the cancel button, forcing immediate billing) or offer unsustainable, massive discounts to spike the conversion rate. This would artificially inflate conversions in the short term but lead to a massive surge in **Refund Rates**, immediate first-month churn, overwhelmed customer support, and permanent damage to brand trust.
