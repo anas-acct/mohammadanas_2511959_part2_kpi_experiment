@@ -61,3 +61,14 @@ The KPI Tree (located in `outputs/kpi_tree.png`) visually breaks down the North 
 
 **Guardrail Metrics:** 
 To ensure the conversion lift is healthy and sustainable, the tree explicitly outlines three guardrails: Refund Rate, Support Ticket Rate, and Segment-Level Performance. These ensure we are not optimizing conversion at the expense of operational stability or overall revenue quality.
+
+## 5. Experiment Analysis Approach & Data Cleaning
+
+Before analyzing the experiment results, the dataset (`campaign_experiment_data.xlsx`) underwent rigorous data cleaning and preparation to ensure statistical validity:
+* **Duplicate Handling:** Identified and removed 8 duplicate `user_id` records to prevent double-counting.
+* **Missing Values:** `days_to_convert` contained expected nulls (non-converted users). Minor nulls in `device_type` (18), `traffic_source` (24), and `engagement_score` (14) were retained as "Unknown" to preserve the size of the control/treatment groups.
+* **Group Counts & Segment Distribution:** Confirmed a balanced randomization split (Treatment: 715 users, Control: 693 users) with no major segment-level assignment biases.
+* **Invalid Binaries:** Validated that all boolean funnel stages (landing page visits, trial starts, conversions) contained only strictly valid 0/1 integers.
+* **Revenue Outliers:** Identified 4 extreme upper-bound outliers in `revenue_30d` (exceeding \$2,340, with a max of \$8,610). While retained for total revenue calculations, these were noted as potential skews for ARPU (Average Revenue Per User) interpretation.
+
+* 
