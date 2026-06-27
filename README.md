@@ -21,7 +21,18 @@ Before making a final launch recommendation to leadership, the following empiric
 2. Stability or improvement in specified guardrail metrics (Refund Rate, Support Ticket Rate, and Engagement Score) to ensure no segment-level degradation.
 3. Clean, verified experiment data free of significant duplicates, anomalies, or structural imbalances.
 
-## 2. North Star Metric Definition
+## 2. Dataset Description
+
+The dataset (`campaign_experiment_data.xlsx`) contains user-level behavior, conversion, and operational data collected during the onboarding campaign experiment. It tracks the end-to-end journey of newly registered users, from initial landing page visits to revenue generation and post-activation interactions.
+
+**Key Data Categories included in the dataset:**
+* **Experiment Assignment:** Indicates whether the user was placed in the `Control` group (legacy onboarding experience) or the `Treatment` group (new onboarding campaign).
+* **User & Segment Characteristics:** Includes unique user identifiers and categorical segments required for deeper analysis, such as Region, Device Type, Traffic Source, and Plan Type.
+* **Funnel & Conversion Flags (Binary):** Boolean indicators showing if a user reached specific funnel milestones (e.g., visited landing page, started trial, completed onboarding, and converted to a paid subscription).
+* **Financial Metrics:** Continuous data tracking the actual Revenue generated per user and the Days to Convert.
+* **Guardrail & Operational Metrics:** Includes continuous and binary data for Average Engagement Score, Refund Requests, and Support Ticket creations to monitor product friction and revenue quality.
+
+## 3. North Star Metric Definition
 
 **Selected North Star Metric:** Paid Conversion Rate (Total Users Converted to Paid / Total Users)
 
@@ -39,7 +50,7 @@ In a subscription-based business, top-of-funnel user acquisition is expensive. I
 **Risks of Blind Optimization:**
 If the Paid Conversion Rate is optimized blindly without monitoring guardrails, the business is exposed to severe risks. For example, the campaign could use aggressive "dark patterns" (e.g., hiding the cancel button, forcing immediate billing) or offer unsustainable, massive discounts to spike the conversion rate. This would artificially inflate conversions in the short term but lead to a massive surge in **Refund Rates**, immediate first-month churn, overwhelmed customer support, and permanent damage to brand trust.
 
-## 3. KPI Tree Summary
+## 4. KPI Tree Summary
 
 The KPI Tree (located in `outputs/kpi_tree.png`) visually breaks down the North Star Metric (Paid Conversion Rate) into actionable and measurable drivers. 
 
