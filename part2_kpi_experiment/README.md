@@ -115,6 +115,7 @@ To move forward and safely capture the revenue lift, the following action plan i
 
 **Supporting Project Files:**
 To verify the data models, statistical tests, and framework design, the following artifacts are included in this repository:
-* `outputs/kpi_tree.png`: Visual architecture breaking down the North Star metric into actionable drivers.
+* `mohammadanas_2511959_part2_kpi_experiment
+/part2_kpi_experiment/outputs/kpi_tree.png`: Visual architecture breaking down the North Star metric into actionable drivers.
 * `screenshots/summary_metrics.png`: A snapshot of the aggregated Excel pivot tables comparing Control vs. Treatment performance.
 * `screenshots/hypothesis_test_output.png`: The mathematical evidence and Z-Statistic calculation verifying the conversion lift is not due to random chance.
